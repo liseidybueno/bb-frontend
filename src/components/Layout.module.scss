@@ -32,6 +32,11 @@
     font-size: .8em;
     padding: 12px;
   }
+
+  &:hover {
+    background-color: darken($mint-green, 20%);
+    color: black;
+  }
 }
 
 /* Sidebar */
@@ -68,7 +73,7 @@
   padding: 8px;
 
   &:hover {
-    color: white; // Keeps text white even on hover when active
+    color: white; 
   }
 }
 
