@@ -1,4 +1,5 @@
-const reportWebVitals = onPerfEntry => {
+// Import the web-vitals module dynamically
+const reportWebVitals = (onPerfEntry: (entry: any) => void) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
       getCLS(onPerfEntry);

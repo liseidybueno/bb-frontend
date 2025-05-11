@@ -1,0 +1,37 @@
+@import '../../styles/main.scss';
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+}
+
+.loginForm {
+  width: 100%;
+}
+
+.headers {
+  text-align: center;
+}
+
+.socialLogin {
+  @include flex(column, center, center);
+  margin: 1em 0;
+  gap: 1em;
+}
+
+.googleButton {
+  background-color: $mint-green;
+  @include flex(row, center, center);
+  &:hover {
+    background-color: darken($mint-green, 10%);
+    color: black;
+  }
+}

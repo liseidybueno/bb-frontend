@@ -1,0 +1,36 @@
+// src/styles/_forms.scss
+
+.authForm {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 32em;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    margin: 0 15px;
+    border-radius: 8px;
+  }
+}
+
+.input {
+  margin-bottom: 1em;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  width: 100%;
+}
+
+.authHeader {
+  margin: 0;
+}
+
+.bottomText {
+  text-align: center;
+}
+
+.errorMessage {
+  margin: 1em;
+  color: $error;
+}
